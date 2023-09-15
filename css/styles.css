@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata|Roboto');
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #FFFFFF;
+    background-color: rgba(144, 224, 239,0.5);
     color: #000000;
     margin: 0;
     padding: 0;
+}
+
+.categoriaT{
+  padding-top: 10px;
+  margin-left: 80px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 40px;
 }
 
 header {
@@ -15,6 +24,11 @@ header {
 .nav-link{
     color: #e0d2d2;
 }
+
+.navbar-nav li div {
+  margin-left: 300px;
+}
+
 
 .icon{
     background-color: #006DAA;
@@ -115,6 +129,12 @@ z-index: 4;
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
+}
+.imgCarusel{
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 230px;
+  height: 130px;
 }
 /* Carousel Row */
 .carousel-row {
