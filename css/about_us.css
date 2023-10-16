@@ -1,5 +1,5 @@
 .row.heading h2 {
-    color: #0059ff;
+    color: #003559;
     font-size: 100px;
     font-family: 'Times New Roman', Times, serif;
     line-height: 95px;
@@ -54,7 +54,7 @@ ul{
 
 
 .our-webcoderskull{
-  background: url("https://images3.alphacoders.com/904/904269.jpg")/*("http://www.webcoderskull.com/img/right-sider-banner.png") no-repeat center top / cover;*/
+  /*background: url("https://images3.alphacoders.com/904/904269.jpg")/*("http://www.webcoderskull.com/img/right-sider-banner.png") no-repeat center top / cover;*/
   
 }
 .our-webcoderskull .cnt-block{ 
