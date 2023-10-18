@@ -8,7 +8,7 @@
 .carrito-container {
     position: relative;
     display: inline-block;
-    margin-right: 25px;
+    margin-right: 0px;
 }
 
 #contador-value {

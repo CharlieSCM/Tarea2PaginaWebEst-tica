@@ -145,15 +145,13 @@
 
           <ul class="navbar-nav car mr-auto">
             <li>
-              <div>
               <a class="nav-link" href="carrito.php" id="contador">
                     <div class="carrito-container">
-                        <img class="icon v" src="../imagenes/carritoC.png" alt="" height="30">
+                        <img class="icon v" src="../imagenes/carritoC.png" alt="" height="30px">
                         <!--el contador value se usa mas que nada el value para obtener los valores del id que se llama contador-->
                         <span id="contador-value"></span>
                     </div>
                   </a>
-              </div>
             </li>
           </ul>
 
@@ -267,41 +265,20 @@
       <h2 class="categoriaT">Terror</h2>
         <div class="carousel-row">
           <?php foreach($juegosT as $game): ?>
-              <div class="carousel-tile" style="background: #46B1C9;">
+            <div class="carousel-tile" style="background: #46B1C9;">
+                  <div>
                   <p>
                     <?php echo $game['titulo'] ?>
                   </p>
-                <img class = imgCarusel src="../imagenes/<?php echo $game['imagen'] ?>" alt="">
-                <p>
+                  <img class = "imgCarusel" src="../imagenes/<?php echo $game['imagen'] ?>" alt="">
+                  </div>
+                  <a class="agregar" href="../controladores/agregarCarro.php?id=<?php echo $game['id_juego'] ?>">AGREGAR A CARRITO</a>
+                  <p>
                 <?php echo $game['juego_precio'] ?> 
                 </p>
-                
               </div>
-                <a href="../controladores/agregarCarro.php">COMPRAR</a>
-                <a href="../controladores/agregarCarro.php?id=<?php echo $game['id_juego'] ?>">AGREGAR a CARRITO</a>
               <?php endforeach; ?>
         </div>
-              <!--
-              <div class="carousel-tile" style="background: #84C0C6;">
-                <a href="vistas/detalle_juego.html">
-                  <img class = imgCarusel src="https://c4.wallpaperflare.com/wallpaper/555/424/879/video-game-outlast-2-logo-wallpaper-preview.jpg" alt="">
-                </a>
-              </div>
-              <div class="carousel-tile" style="background: #9FB7B9;">
-                <a href="vistas/detalle_juego.html">
-                  <img class = imgCarusel src="https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2022/06/03/RE4-remake.jpg" alt="">
-                </a>
-              </div>
-              <div class="carousel-tile" style="background: #BCC1BA;">
-                <a href="vistas/detalle_juego.html">
-                  <img class = imgCarusel src="https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2019/06/blair.png?resize=1080,608&quality=80&ssl=1" alt="">
-                </a>
-              </div>
-              <div class="carousel-tile" style="background: #F2E2D2;">
-                <a href="vistas/detalle_juego.html">
-                  <img class = imgCarusel src="https://images2.alphacoders.com/581/581828.jpg" alt="">
-                </a>
-              </div>-->
         </div>
     </div>
 
@@ -309,38 +286,20 @@
       <h2 class="categoriaT">Aventura</h2>
         <div class="carousel-row">
         <?php foreach($juegosA as $game): ?>
-              <div class="carousel-tile" style="background: #46B1C9;">
+          <div class="carousel-tile" style="background: #46B1C9;">
+                  <div>
                   <p>
                     <?php echo $game['titulo'] ?>
                   </p>
-                <img class = imgCarusel src="../imagenes/<?php echo $game['imagen'] ?>" alt="">
-                <p>
+                  <img class = "imgCarusel" src="../imagenes/<?php echo $game['imagen'] ?>" alt="">
+                  </div>
+                  <a class="agregar" href="../controladores/agregarCarro.php?id=<?php echo $game['id_juego'] ?>">AGREGAR A CARRITO</a>
+                  <p>
                 <?php echo $game['juego_precio'] ?> 
                 </p>
-                
               </div>
-                <a href="../controladores/agregarCarro.php">COMPRAR</a>
-                <a href="../controladores/agregarCarro.php?id=<?php echo $game['id_juego'] ?>">AGREGAR a CARRITO</a>
               <?php endforeach; ?>
-              </div><!--
-              <div class="carousel-tile" style="background: #84C0C6;">
-                <a href="">
-                  <img class = imgCarusel src="http://m.gettywallpapers.com/wp-content/uploads/2021/08/Halo-Infinite-Wallpapers1.jpg" alt="">
-                </a>
               </div>
-              <div class="carousel-tile" style="background: #9FB7B9;">
-                <a href="">
-                  <img class = imgCarusel src="https://cdn.wallpapersafari.com/91/52/Vwq9ly.jpg" alt="">
-                </a>              </div>
-              <div class="carousel-tile" style="background: #BCC1BA;">
-                <a href="">
-                  <img class = imgCarusel src="https://i.pinimg.com/originals/41/a2/ec/41a2ec4049a7f9ce8529a0922bde2a7b.jpg" alt="">
-                </a>              </div>
-              <div class="carousel-tile" style="background: #F2E2D2;">
-                <a href="">
-                  <img class = imgCarusel src="https://www.seekpng.com/png/detail/40-405919_fallout-new-vegas-logo-png-fallout-new-vegas.png" alt="">
-                </a>
-              </div>-->
         </div>
     </div>
 
@@ -348,41 +307,20 @@
       <h2 class="categoriaT">Estrategia</h2>
         <div class="carousel-row">
         <?php foreach($juegosE as $game): ?>
-              <div class="carousel-tile" style="background: #46B1C9;">
+          <div class="carousel-tile" style="background: #46B1C9;">
+                  <div>
                   <p>
                     <?php echo $game['titulo'] ?>
                   </p>
-                <img class = imgCarusel src="../imagenes/<?php echo $game['imagen'] ?>" alt="">
-                <p>
+                  <img class = "imgCarusel" src="../imagenes/<?php echo $game['imagen'] ?>" alt="">
+                  </div>
+                  <a class="agregar" href="../controladores/agregarCarro.php?id=<?php echo $game['id_juego'] ?>">AGREGAR A CARRITO</a>
+                  <p>
                 <?php echo $game['juego_precio'] ?> 
                 </p>
-                
               </div>
-                <a href="../controladores/agregarCarro.php">COMPRAR</a>
-                <a href="../controladores/agregarCarro.php?id=<?php echo $game['id_juego'] ?>">AGREGAR a CARRITO</a>
               <?php endforeach; ?>
               </div>
-              <!--
-              <div class="carousel-tile" style="background: #84C0C6;">
-                <a href="">
-                  <img class = imgCarusel src="https://logos-world.net/wp-content/uploads/2020/12/Dota-2-Symbol-700x394.jpg" alt="">
-                </a>
-              </div>
-              <div class="carousel-tile" style="background: #9FB7B9;">
-                <a href="">
-                  <img class = imgCarusel src="https://wallpapers.com/images/featured/apex-legends-1uyhj1h7a5x9zs2w.jpg" alt="">
-                </a>
-              </div>
-              <div class="carousel-tile" style="background: #BCC1BA;">
-                <a href="">
-                  <img class = imgCarusel src="https://esports.eldesmarque.com/wp-content/uploads/2019/09/LoL2-681x382.jpg" alt="">
-                </a>
-              </div>
-              <div class="carousel-tile" style="background: #F2E2D2;">
-                <a href="">
-                  <img class = imgCarusel src="https://logos-download.com/wp-content/uploads/2016/04/CSGO_logo-700x700.png" alt="">
-                </a>
-              </div>-->
         </div>
     </div>
     <!--Fin de tienda-->
