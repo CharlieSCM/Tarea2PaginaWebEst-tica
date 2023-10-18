@@ -23,6 +23,16 @@ header {
 
 .nav-link{
     color: #e0d2d2;
+    position: relative;
+    display: inline-block;
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
+.user{
+  position: relative;
+  display: inline-block;
+  margin-right: 90px;
 }
 
 .navbar-nav li div {

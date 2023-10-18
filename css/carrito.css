@@ -1,0 +1,95 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Título de la página */
+h2.categoriaT {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Contenedor del carrito de compras */
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative; /* Para agregar efectos 3D */
+    transform-style: preserve-3d; /* Efecto 3D */
+}
+
+/* Fila de elementos en el carrito */
+.carousel-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Elemento individual del carrito */
+.carousel-tile {
+    width: 30%;
+    background: #46B1C9;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative; /* Para agregar efectos 3D */
+    transform: perspective(1000px) rotateY(0deg); /* Efecto 3D */
+    transition: transform 0.5s; /* Transición 3D */
+}
+
+/* Efecto 3D al pasar el mouse */
+.carousel-tile:hover {
+    transform: perspective(1000px) rotateY(15deg);
+}
+
+/* Imagen del juego */
+.imgCarusel {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Precio del juego */
+.carousel-tile p:last-child {
+    font-weight: bold;
+    color: #fff;
+    margin-top: 5px;
+    animation: rgbLights 2s infinite alternate; /* Luces RGB */
+}
+
+@keyframes rgbLights {
+    0% {
+        color: #46B1C9;
+    }
+    100% {
+        color: #ff6600;
+    }
+}
+
+
+
+/* Barra de navegación (debes agregarla en el HTML) */
+/* Ejemplo:
+   .navbar {
+       background-color: #333;
+       color: #fff;
+       padding: 10px;
+   }
+*/
