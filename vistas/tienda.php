@@ -266,15 +266,15 @@
         <div class="carousel-row">
           <?php foreach($juegosT as $game): ?>
             <div class="carousel-tile" style="background: #46B1C9;">
-                  <div>
+                  <div class = "imgFoto">
                   <p>
                     <?php echo $game['titulo'] ?>
                   </p>
                   <img class = "imgCarusel" src="../imagenes/<?php echo $game['imagen'] ?>" alt="">
                   </div>
-                  <a class="agregar" href="../controladores/agregarCarro.php?id=<?php echo $game['id_juego'] ?>">AGREGAR A CARRITO</a>
-                  <p>
-                <?php echo $game['juego_precio'] ?> 
+                  <a class="agregar" href="../controladores/agregarCarro.php?id=<?php echo $game['id_juego'] ?>"><img class="carritoA" src="../imagenes/carritoA.png" alt=""></a>
+                  <p class="precio">
+                    $ <?php echo $game['juego_precio'] ?> 
                 </p>
               </div>
               <?php endforeach; ?>
@@ -287,15 +287,15 @@
         <div class="carousel-row">
         <?php foreach($juegosA as $game): ?>
           <div class="carousel-tile" style="background: #46B1C9;">
-                  <div>
+          <div class = "imgFoto">
                   <p>
                     <?php echo $game['titulo'] ?>
                   </p>
                   <img class = "imgCarusel" src="../imagenes/<?php echo $game['imagen'] ?>" alt="">
                   </div>
-                  <a class="agregar" href="../controladores/agregarCarro.php?id=<?php echo $game['id_juego'] ?>">AGREGAR A CARRITO</a>
-                  <p>
-                <?php echo $game['juego_precio'] ?> 
+                  <a class="agregar" href="../controladores/agregarCarro.php?id=<?php echo $game['id_juego'] ?>"><img class="carritoA" src="../imagenes/carritoA.png" alt=""></a>
+                  <p class="precio">
+                    $ <?php echo $game['juego_precio'] ?> 
                 </p>
               </div>
               <?php endforeach; ?>
@@ -308,16 +308,16 @@
         <div class="carousel-row">
         <?php foreach($juegosE as $game): ?>
           <div class="carousel-tile" style="background: #46B1C9;">
-                  <div>
+          <div class = "imgFoto">
                   <p>
                     <?php echo $game['titulo'] ?>
                   </p>
                   <img class = "imgCarusel" src="../imagenes/<?php echo $game['imagen'] ?>" alt="">
-                  </div>
-                  <a class="agregar" href="../controladores/agregarCarro.php?id=<?php echo $game['id_juego'] ?>">AGREGAR A CARRITO</a>
-                  <p>
-                <?php echo $game['juego_precio'] ?> 
-                </p>
+                  <p class="precio">
+                    $ <?php echo $game['juego_precio'] ?> 
+                  </p> 
+                </div>
+                  <a class="agregar" href="../controladores/agregarCarro.php?id=<?php echo $game['id_juego'] ?>"><img class="carritoA" src="../imagenes/carritoA.png" alt=""></a>
               </div>
               <?php endforeach; ?>
               </div>

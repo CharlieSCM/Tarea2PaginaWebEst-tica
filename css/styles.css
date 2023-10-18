@@ -25,8 +25,8 @@ header {
     color: #e0d2d2;
     position: relative;
     display: inline-block;
-    margin-right: 90px;
-    margin-left: 90px;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
 .user{
@@ -134,23 +134,24 @@ z-index: 4;
 }
 /* Carousel Container */
 .carousel {
-    margin: 0;
+    margin: 0px;
     box-sizing: border-box;
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
 }
 .imgCarusel{
-  margin-top: 5px;
+  margin-top: 0cm;
   margin-left: 10px;
   width: 230px;
   height: 130px;
+  
 }
 /* Carousel Row */
 .carousel-row {
     white-space: nowrap;
     margin-top: calc((var(--carousel-tile-height) * (var(--carousel-growth-factor) - 1)) / 2);
-    margin-bottom: calc((var(--carousel-tile-height) * (var(--carousel-growth-factor) - 1)) / 2);
+    margin-bottom: calc((var(--carousel-tile-height) * (var(--carousel-growth-factor) - 1)) / 1);
     margin-left: calc((var(--carousel-tile-width) * (var(--carousel-growth-factor) - 1)) / 2);
     margin-right: calc((var(--carousel-tile-width) * (var(--carousel-growth-factor) - 1)) / 2);
     transition: var(--carousel-transition-2);
@@ -160,7 +161,8 @@ z-index: 4;
     position: relative;
     display: inline-block;
     width: var(--carousel-tile-width);
-    height: var(--carousel-tile-height);
+    height: 220px;
+    
     margin-right: var(--carousel-tile-spacing);
     transition: var(--carousel-transition-2);
     -webkit-transform-origin: center left;
