@@ -267,15 +267,15 @@
           <?php foreach($juegosT as $game): ?>
             <div class="carousel-tile" style="background: #46B1C9;">
                   <div class = "imgFoto">
-                  <p>
+                  <p class="tituloJ">
                     <?php echo $game['titulo'] ?>
                   </p>
                   <img class = "imgCarusel" src="../imagenes/<?php echo $game['imagen'] ?>" alt="">
                   </div>
-                  <a class="agregar" href="../controladores/agregarCarro.php?id=<?php echo $game['id_juego'] ?>"><img class="carritoA" src="../imagenes/carritoA.png" alt=""></a>
                   <p class="precio">
                     $ <?php echo $game['juego_precio'] ?> 
-                </p>
+                  </p>
+                  <a class="agregar" href="../controladores/agregarCarro.php?id=<?php echo $game['id_juego'] ?>"><img class="carritoA" src="../imagenes/carritoA.png" alt=""></a>
               </div>
               <?php endforeach; ?>
         </div>
@@ -288,15 +288,15 @@
         <?php foreach($juegosA as $game): ?>
           <div class="carousel-tile" style="background: #46B1C9;">
           <div class = "imgFoto">
-                  <p>
+                  <p class="tituloJ">
                     <?php echo $game['titulo'] ?>
                   </p>
                   <img class = "imgCarusel" src="../imagenes/<?php echo $game['imagen'] ?>" alt="">
                   </div>
-                  <a class="agregar" href="../controladores/agregarCarro.php?id=<?php echo $game['id_juego'] ?>"><img class="carritoA" src="../imagenes/carritoA.png" alt=""></a>
                   <p class="precio">
                     $ <?php echo $game['juego_precio'] ?> 
                 </p>
+                  <a class="agregar" href="../controladores/agregarCarro.php?id=<?php echo $game['id_juego'] ?>"><img class="carritoA" src="../imagenes/carritoA.png" alt=""></a>
               </div>
               <?php endforeach; ?>
               </div>
@@ -309,14 +309,15 @@
         <?php foreach($juegosE as $game): ?>
           <div class="carousel-tile" style="background: #46B1C9;">
           <div class = "imgFoto">
-                  <p>
+                  <p class="tituloJ">
                     <?php echo $game['titulo'] ?>
                   </p>
                   <img class = "imgCarusel" src="../imagenes/<?php echo $game['imagen'] ?>" alt="">
-                  <p class="precio">
+                  
+                </div>
+                <p class="precio">
                     $ <?php echo $game['juego_precio'] ?> 
                   </p> 
-                </div>
                   <a class="agregar" href="../controladores/agregarCarro.php?id=<?php echo $game['id_juego'] ?>"><img class="carritoA" src="../imagenes/carritoA.png" alt=""></a>
               </div>
               <?php endforeach; ?>
