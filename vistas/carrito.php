@@ -104,9 +104,9 @@
 
         </div>
     </div>
-    <div class="center">
-      <p>TOTAL A PAGAR: <span id="pagar-value"></span></p>
-      <a href="../controladores/ctrRealizarPago.php">PAGAR</a>
+    <div class="entrada">
+      <p class="precio" >TOTAL A PAGAR: <span id="pagar-value"></span></p>
+      <a  class="Pagar" href="../controladores/ctrRealizarPago.php"><img class="pagarT" src="../imagenes/metodo-de-pago.png" alt=""></a>
     </div>
 
 

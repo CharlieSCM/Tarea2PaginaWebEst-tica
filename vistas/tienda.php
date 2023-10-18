@@ -102,7 +102,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="../vistas/tienda.html"
+              <a class="nav-link" href="tienda.php"
                 >Inicio<span class="sr-only">(current)</span></a
               >
             </li>
@@ -265,7 +265,7 @@
       <h2 class="categoriaT">Terror</h2>
         <div class="carousel-row">
           <?php foreach($juegosT as $game): ?>
-            <div class="carousel-tile" style="background: #46B1C9;">
+            <div class="carousel-tile" style="background: #84C0C6;">
                   <div class = "imgFoto">
                   <p class="tituloJ">
                     <?php echo $game['titulo'] ?>
@@ -286,7 +286,7 @@
       <h2 class="categoriaT">Aventura</h2>
         <div class="carousel-row">
         <?php foreach($juegosA as $game): ?>
-          <div class="carousel-tile" style="background: #46B1C9;">
+          <div class="carousel-tile" style="background: #9FB7B9;">
           <div class = "imgFoto">
                   <p class="tituloJ">
                     <?php echo $game['titulo'] ?>
@@ -307,7 +307,7 @@
       <h2 class="categoriaT">Estrategia</h2>
         <div class="carousel-row">
         <?php foreach($juegosE as $game): ?>
-          <div class="carousel-tile" style="background: #46B1C9;">
+          <div class="carousel-tile" style="background: #BCC1BA;">
           <div class = "imgFoto">
                   <p class="tituloJ">
                     <?php echo $game['titulo'] ?>
