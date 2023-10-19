@@ -9,7 +9,7 @@ class mostrar{
     } 
     public function mostrarJuegosTerror() {
       //  $query = "SELECT id_lista_cursos,titulo, imagen,precio FROM lista_curso";
-      $query = "SELECT id_juego,juego_precio,imagen,titulo FROM juego where id_categoria = 5 limit 5";
+      $query = "SELECT id_juego,juego_precio,imagen,titulo FROM juego where id_categoria = 5 limit 11";
         $stmt = $this->db->prepare($query);
         $stmt->execute();
     
@@ -23,7 +23,7 @@ class mostrar{
 
     public function mostrarJuegosAventura() {
         //  $query = "SELECT id_lista_cursos,titulo, imagen,precio FROM lista_curso";
-        $query = "SELECT id_juego,juego_precio,imagen,titulo FROM juego where id_categoria = 2 limit 5";
+        $query = "SELECT id_juego,juego_precio,imagen,titulo FROM juego where id_categoria = 2 limit 11";
           $stmt = $this->db->prepare($query);
           $stmt->execute();
       
@@ -37,7 +37,7 @@ class mostrar{
 
       public function mostrarJuegosEstrategia() {
         //  $query = "SELECT id_lista_cursos,titulo, imagen,precio FROM lista_curso";
-        $query = "SELECT id_juego,juego_precio,imagen,titulo FROM juego where id_categoria = 3 limit 5";
+        $query = "SELECT id_juego,juego_precio,imagen,titulo FROM juego where id_categoria = 3 limit 11";
           $stmt = $this->db->prepare($query);
           $stmt->execute();
       

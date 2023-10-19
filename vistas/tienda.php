@@ -103,8 +103,7 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="tienda.php"
-                >Inicio<span class="sr-only">(current)</span></a
-              >
+                >Inicio<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../vistas/acerca_nosotros.html"
@@ -122,7 +121,8 @@
           </ul>
 
           <ul class="navbar-nav mr-auto">
-            <li></li>
+            <li><a class="nav-link" href="UpJuego.php"
+                >Agregar<span class="sr-only">(current)</span></a></li>
           </ul>
 
           <ul class="navbar-nav mr-auto">
