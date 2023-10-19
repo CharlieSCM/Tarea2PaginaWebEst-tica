@@ -4,23 +4,24 @@ include '../controladores/ctrMostrarCategoria.php';
 ?> 
 <!DOCTYPE html>
 
-<link rel="stylesheet" href="../assets/CSS/crearcurso.css">
 <html>
 
 <head>
-    <title>Formulario de Registro de Curso</title>
+    <title>Subir Juego</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/agregarJuego.css">
 </head>
 
 <body>
-    <h1>crear Curso</h1>
+    <h1></h1>
     <form action="../controladores/ctrUpJuego.php" method="post" enctype="multipart/form-data">
         <div>
             <!-- <form action="../Controladores/ctrlSubirVideo.php" method="post" enctype="multipart/form-data">-->
-            <label for="titulo">Título del curso</label>
+            <label for="titulo">Título</label>
             <input type="text" name="titulo" id="titulo" required>
 
             <div class="drag-drop-area">
-                <p>Arrastra y suelta una imagen aquí</p>
+                <p>Agregar imagen</p>
                 <input type="file" name="imagen" id="imagen" required accept="image/*" multiple="false">
             </div>
             <br><br>
@@ -41,7 +42,6 @@ include '../controladores/ctrMostrarCategoria.php';
 
         </div>
         <div>
-            <!-- Agregar otros campos del formulario según tus necesidades -->
         </div>
         <div>
             <input type="submit" value="Registrar juego">

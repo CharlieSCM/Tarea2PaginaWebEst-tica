@@ -38,9 +38,9 @@ public function obtenerJuegoCarrito($user_id)
         $existeCompra = $stmt->fetchColumn();
 
         if ($existeCompra > 0) {
-            echo "Este juego ya ha sido comprado, no se puede agregar al carrito.";
+            //echo "Este juego ya ha sido comprado, no se puede agregar al carrito.";
             
-           // header("Location: ../html/yaEsta/carritoYaEsta.php");
+           header("Location: ../vistas/noExito.html");
 
         } else {
             // Verificar si el curso ya está en la lista de carrito del usuario
@@ -52,18 +52,19 @@ public function obtenerJuegoCarrito($user_id)
             $existeEnCarrito = $stmt->fetchColumn();
 
             if ($existeEnCarrito > 0) {
-                echo "Este juego ya está en el carrito";
-               // header("Location: ../html/yaEsta/carritoYaEsta.php");
+                //echo "Este juego ya está en el carrito";
+                header("Location: ../vistas/noExito.html");
             } else {
                 $query = "INSERT INTO carrito (id_usuario, id_juego) VALUES (:id_usuario, :id_juego)";
                 $rs = $this->db->prepare($query);
                 $rs->bindParam(':id_usuario', $id_usuario, PDO::PARAM_INT);
                 $rs->bindParam(':id_juego', $juegoID, PDO::PARAM_INT);
                 if ($rs->execute()) {
-                    echo "¡Juego agregado a carrito!";
-                    //header("Location: ../html/main.php");
+                    //echo "¡Juego agregado a carrito!";
+                    header("Location: ../vistas/exito.html");
                 } else {
-                    echo "Error al agregar el juego a carrito";
+                    //echo "Error al agregar el juego a carrito";
+                    header("Location: ../vistas/exito.html");
                 }
             }
         }
@@ -92,7 +93,8 @@ where id_usuario=1; */
         // Verificar si hay cursos en el carrito
         $carritoJuego = $this->obtenerJuegoCarrito($id_usuario); // Asegúrate de pasar el ID del usuario
         if (empty($carritoJuego)) {
-            echo "No hay juegos en el carrito.";
+            //echo "No hay juegos en el carrito.";
+            header("Location: ../vistas/noExito.html");
             return;
         }
 
@@ -106,12 +108,13 @@ where id_usuario=1; */
 
             if ($rs->execute()) {
                 // La compra se ha registrado correctamente en la base de datos
-                echo "¡Compra registrada en la base de datos!";
-                //header("Location: ../html/compraConcluida.php");
+                //echo "¡Compra registrada en la base de datos!";
+                header("Location: ../vistas/exito.html");
                 $this->eliminarCarrito($id_usuario);
             } else {
                 // Hubo un error al registrar la compra
-                echo "No se logro realizar la compra";
+                header("Location: ../vistas/exito.html");
+                //echo "No se logro realizar la compra";
             }
         }
     }
@@ -124,11 +127,10 @@ where id_usuario=1; */
         $rs = $this->db->prepare($query);
         $rs->bindParam(':user_id', $id_usuario, PDO::PARAM_INT);
         if ($rs->execute()) {
-            // Los cursos del carrito se han eliminado correctamente
-            echo "El juego se elimino del video!";
+            header("Location: ../vistas/exito.html");
         } else {
-            // Hubo un error al eliminar los cursos del carrito
-            echo "Error al eliminar el juego";
+            //echo "Error al eliminar el juego";
+            header("Location: ../vistas/noExito.html");
         }
     }
 
@@ -141,11 +143,11 @@ where id_usuario=1; */
         $rs->bindParam(':user_id', $id_usuario, PDO::PARAM_INT);
         $rs->bindParam(':id_juego', $juegoID, PDO::PARAM_INT);
         if ($rs->execute()) {
-            // Los cursos del carrito se han eliminado correctamente
-            echo "¡Juego del carrito eliminado";
+            //echo "¡Juego del carrito eliminado";
+            header("Location: ../vistas/exito.html");
         } else {
-            // Hubo un error al eliminar los cursos del carrito
-            echo "Error al eliminar el juego";
+            //echo "Error al eliminar el juego";
+            header("Location: ../vistas/noExito.html");
         }
     }
 

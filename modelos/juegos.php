@@ -34,12 +34,14 @@ class upJuego
 
         if ($stmt->execute()) {
             //$lastInsertId = $conn->lastInsertId(); // Obtenemos el ID insertado
-        echo "Registro exitoso";
+        //echo "Registro exitoso";
+        header("Location: ../vistas/exito.html");
         //$this->insertarEnCursosCreados($id_usuario, $lastInsertId);
             
         } else {
             $errorInfo = $stmt->errorInfo();
-            echo "Error al subir el juego: " . $errorInfo[2];
+            //echo "Error al subir el juego: " . $errorInfo[2];
+            header("Location: ../vistas/noExito.html");
         }
     }
 }
